@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Afriland First Bank - Surveillance des Impayés</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .header { background-color: #003087; color: white; padding: 10px; text-align: center; }
+    .header img { height: 80px; }
+    .card { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .metric { font-size: 1.2em; font-weight: bold; color: #003087; }
+    .carousel-item.active { display: block; }
+    .carousel-item { display: none; }
+    .carousel img { width: 100%; height: 600px; object-fit: cover; }
+    .carousel-caption { background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; }
+    .fit-head { font-size: 3em; margin-bottom: 15px; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+    .fit-text { font-size: 1.5em; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+    .fit-h1 { font-size: 4em; margin-bottom: 30px; }
+    .featurette-image { border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .featurette-heading { font-size: 3em; color: #003087; }
+    .lead { font-size: 1.2em; line-height: 1.6; }
+    .center-on-xs { text-align: center; }
+    @media (min-width: 768px) {
+      .center-on-xs { text-align: left; }
+      .col-md-push-7 { left: 58.33333333%; }
+      .col-md-pull-5 { right: 41.66666667%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.CaSXc3j7SHpFh7sv0wVDFwHaE9?rs=1&pid=ImgDetMain" alt="Afriland First Bank Logo">
+    <h2>Afriland First Bank - Tableau de Bord de Surveillance des Impayés</h2>
+  </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://drive.google.com/file/d/1zKsRo3K8oxJSWMtSveYUw93BLttkuYEP/view?usp=sharing" alt="1">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="fit-head">Surveillez les Impayés en Temps Réel</h1>
+            <p class="fit-text"><font color="white">Utilisez notre tableau de bord interactif pour suivre les impayés par segment et type de crédit.</font></p>
+            <button id="start_dashboard" class="btn btn-lg btn-primary">Commencer Maintenant</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://drive.google.com/file/d/14WVkfahYq7Pi-98FcY6f7m14oICfqGiG/view?usp=sharing" alt="2"> 
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="fit-head">Prédisez les Risques d'Impayé</h1>
+            <p class="fit-text"><font color="white">Utilisez notre outil de machine learning pour identifier les clients à risque.</font></p>
+            <button id="start_ml" class="btn btn-lg btn-primary">Commencer Maintenant</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://drive.google.com/file/d/1mVMwCzd81mWLCf_rnSH046ALlmqwwEKp/view" alt="3">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="fit-head">Besoin d'Anticiper les Impayés ?</h1>
+            <p class="fit-text">Vous ne savez pas par où commencer ? Nous avons la solution.</p>
+            <button id="start_solution" class="btn btn-lg btn-primary">Commencer Maintenant</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+  </div>
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center fit-h1">Afriland First Bank - Équipe de Gestion des Risques</h1>
+      </div>
+    </div>
+    <div class="row featurette">
+      <div class="col-md-5 col-md-push-7">
+        <img class="featurette-image img-responsive" src="https://drive.google.com/file/d/1MnDfmxYj1R4Dvs7SG6A05ugBhsuuq4JY/view?usp=sharing" alt="">  
+      </div>
+      <div class="col-md-7 col-md-pull-5">
+        <h2 class="featurette-heading">À Propos de Nous<br><span class="text-muted">Équipe de Gestion des Risques</span></h2>
+        <p class="lead">Ce tableau de bord a été développé par l'équipe de gestion des risques d'Afriland First Bank pour améliorer la surveillance des impayés et anticiper les risques de défaut, dans le respect des réglementations COBAC.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
